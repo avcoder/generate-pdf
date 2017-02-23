@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/picnic.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <article class="card">
+    <form method="post" action="/pdf">
+
+      <div class="third">
+        <input type="text" name="filename" placeholder="File Name" class="stack">
+        <textarea name="content" placeholder="Write some text for on your PDF" class="stack"></textarea>
+      <button type="submit" value="Create PDF" class="stack icon-paper-plane">Save to PDF</button>
+      </div>
+    </form>
+    </article>
+  </body>
+</html>
